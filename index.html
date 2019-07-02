@@ -39,6 +39,18 @@
         element.classList.add("hero")
         element.classList.add("is-bold")
         element.classList.add("is-dark")
+      } else {
+        var element = document.getElementById("projects")
+        element.classList.remove("hero")
+        element.classList.remove("is-dark")
+
+        var element = document.getElementById("header")
+        element.classList.remove("is-bold")
+
+        var element = document.getElementById("footer")
+        element.classList.remove("hero")
+        element.classList.remove("is-bold")
+        element.classList.remove("is-dark")
       }
     }
     mql.addListener(setDark);
