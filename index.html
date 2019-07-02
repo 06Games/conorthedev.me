@@ -24,7 +24,29 @@
 </head>
 
 <body>
-  <section class="hero is-medium is-dark">
+  <script>
+    var mql = window.matchMedia("(prefers-color-scheme: dark)");
+    function setDark(e) {
+      if (e.matches) {
+        var element = document.getElementById("projects")
+        element.classList.add("hero")
+        element.classList.add("is-dark")
+
+        var element = document.getElementById("header")
+        element.classList.add("is-bold")
+
+        var element = document.getElementById("footer")
+        element.classList.add("hero")
+        element.classList.add("is-bold")
+        element.classList.add("is-dark")
+      }
+    }
+    mql.addListener(setDark);
+    document.addEventListener("DOMContentLoaded", function () {
+      setDark(mql);
+    });
+  </script>
+  <section id="header" class="hero is-medium is-dark">
     <div class="hero-body">
       <div class="container">
         <div class="columns is-centered">
@@ -63,7 +85,7 @@
       </div>
     </div>
   </section>
-  <section class="section">
+  <section id="projects" class="section">
     <div class="container">
       <div class="content">
         <h1 class="title is-2">
@@ -129,6 +151,32 @@
       <br>
       <div class="content">
         <h1 class="subtitle is-4">
+          Web Development
+        </h1>
+      </div>
+      <div class="columns">
+        <div class="column is-one-third">
+          <div class="media-content">
+            <div class="content">
+              <h1 class="title is-size-5">This website</h1>
+              <p class="is-size-5 subtitle">I made this website using HTML & CSS.</p>
+              <p class="is-size-5 subtitle"><a href="" style="pointer-events: none; opacity: 0.7;">Read More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="media-content">
+            <div class="content">
+              <h1 class="title is-size-5">Fóntais Website</h1>
+              <p class="is-size-5 subtitle">I made the website for the Fóntais Bot.</p>
+              <p class="is-size-5 subtitle"><a href="https://fontais.github.io">See More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="content">
+        <h1 class="subtitle is-4">
           Java / Kotlin
         </h1>
       </div>
@@ -180,16 +228,20 @@
         </div>
       </div>
       <br>
-      <h1 class="title is-2">
-        Contact Me
-      </h1>
-      <p class="is-size-5 subtitle">
-        If you wish to contact me, you can add me on Discord: <code>Conor#1234</code> or on <a
-          href="https://twitter.com/ConorTheDev">Twitter</a>. I don't have an email at the moment but if you wish to
-        contact me by email I can set one up.
-      </p>
+
     </div>
   </section>
+  <footer id="footer" class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Contact Me</strong><br>
+        If you wish to contact me, you can add me on Discord: <code>Conor#1234</code> or on <a
+          href="https://twitter.com/ConorTheDev">Twitter</a>. I don't have an email at the moment but if you wish to
+        contact me by email I can set one up.<br><br>
+        Website designed by ConorTheDev. Made with <a href="https://bulma.io">Bulma!</a>
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>
