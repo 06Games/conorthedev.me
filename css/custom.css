@@ -1,37 +1,45 @@
 .btn-patreon {
-  background-color: #f96854;
-  border-color: #f96854;
-  color: white;
+	background-color: #f96854;
+	border-color: #f96854;
+	color: white;
 }
 .btn-patreon:hover,
 .btn-patreon:focus {
-  background-color: #d45847;
-  border-color: #d45847;
-  color: white;
+	background-color: #d45847;
+	border-color: #d45847;
+	color: white;
 }
 .btn-twitter {
-  background-color: #1da1f2;
-  border-color: #1da1f2;
-  color: white;
+	background-color: #1da1f2;
+	border-color: #1da1f2;
+	color: white;
 }
 .btn-twitter:hover,
 .btn-twitter:focus {
-  background-color: #188ad1;
-  border-color: #188ad1;
-  color: white;
+	background-color: #188ad1;
+	border-color: #188ad1;
+	color: white;
 }
 .btn-github {
-  background-color: #f5f5f5;
-  border-color: #f5f5f5;
-  color: 333;
+	background-color: #f5f5f5;
+	border-color: #f5f5f5;
+	color: 333;
 }
 .btn-github:hover,
 .btn-github:focus {
-  background-color: #e2e2e2;
-  border-color: #e2e2e2;
-  color: 333;
+	background-color: #e2e2e2;
+	border-color: #e2e2e2;
+	color: 333;
 }
 
 div.media-content {
-  overflow-x: inherit;
+	overflow-x: inherit;
+}
+
+/* 
+Fix Links in Dark Theme
+*/
+.hero.is-dark a:not(.button):not(.dropdown-item):not(.tag),
+.hero.is-dark strong {
+	color: rgb(50, 115, 220);
 }
