@@ -1,0 +1,17 @@
+Package: com.conorthedev.chromaaa
+Version: 1.0xy
+Architecture: iphoneos-arm
+Maintainer: ConorTheDev
+Installed-Size: 348
+Depends: mobilesubstrate, ws.hbang.common (>= 1.11)
+Filename: debs/me.conorthedev.chromaaa_1.0.deb
+Size: 39572
+MD5sum: 99653ba0b482df97b71bbb8c52c9872c
+SHA1: f60f8d3e4bde589c515723f9588a94ee33de8c53
+SHA256: 8623ccf23e3ea66739d7a4bea82687069ce5f39c0efbb7265323e0ace78d1909
+Section: Tweaks
+Description: Who said RGB was just for computer peripherals?
+Author: ConorTheDev
+Name: Chromaaa
+Sileodepiction: https://conorthedev.me/repo/SileoDepictions/Chromaaa
+
