@@ -12,7 +12,7 @@
     <meta property="og:title" content="ConorTheDev's Website" />
     <meta property="og:url" content="https://conorthedev.me" />
     <meta property="og:image" content="https://conorthedev.me/img/profile.png" />
-    <meta name="theme-color" content="#343a40">
+    <meta name="theme-color" content="#b9f0c3">
 
     <title>ConorTheDev</title>
 
@@ -25,21 +25,33 @@
 
 <body>
     <main role="main">
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="/">
                 <img src="/img/profile.png" style="border-radius: 15px" width="30" height="30"
                     class="d-inline-block align-top mr-1" alt="">
                 ConorTheDev
             </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="">Home</a>
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Mods
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/randommod.html">RandomMod</a>
+                            <!---<a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>-->
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -56,6 +68,18 @@
             <h3 class="subtitle text-muted">Some projects I've worked on over the last few years</h3>
             <br>
             <div class="row">
+                <div class="col-sm-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">RandomMod <span class="badge badge-dark">Minecraft Mod</span>
+                            </h5>
+                            <p class="card-text">Makes stupid changes to Minecraft, i.e. changing every player's
+                                name & more
+                            </p>
+                            <a href="/randommod" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-sm-4 mb-3">
                     <div class="card">
                         <div class="card-body">
@@ -95,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 mb-5">
+                <div class="col-sm-4 mb-3">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">ModernPower <span class="badge badge-primary">Obj-C
