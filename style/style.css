@@ -1,0 +1,12 @@
+#profile{
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	display: block;
+	margin-right: 1em;
+}
+@media(max-width: 392px){
+	#profile{
+		display: none;
+	}
+}
