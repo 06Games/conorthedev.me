@@ -1,5 +1,5 @@
 body{
-	min-width: 325px;
+	min-width: 350px;
 }
 
 .head{
@@ -26,7 +26,12 @@ body{
 		display: none;
 	}
 }
-	
+
+@media(max-width: 1200px){
+	#tweaks .tile:not(.is-child){
+		display: block;
+	}	
+}
 #tweaks .tile.is-child{
 	position: relative;
 }
