@@ -1,3 +1,7 @@
+body{
+	min-width: 325px;
+}
+
 #profile{
 	width: 65px;
 	height: 65px;
@@ -9,4 +13,26 @@
 	#profile{
 		display: none;
 	}
+}
+	
+#tweaks .tile.is-child{
+	position: relative;
+}
+#tweaks .content{
+	margin-bottom: calc(1.5rem + 40px);
+}
+#tweaks .info{
+	height: 40px;
+	position: absolute;
+	bottom: 1.25rem;
+	width: calc(100% - 2.5rem);
+}
+#tweaks .info .links{
+	font-size: 25px; 
+	float: right;
+}
+#tweaks .info .versions{
+	font-weight: 300;
+	margin-top: 5px;
+	position: absolute;
 }
