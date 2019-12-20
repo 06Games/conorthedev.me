@@ -2,15 +2,27 @@ body{
 	min-width: 325px;
 }
 
-#profile{
+.head{
+	display: flex; 
+	margin-bottom: 1.5rem;
+}
+.head>*{
+	display: block;
+}
+.head img{
 	width: 65px;
 	height: 65px;
-	border-radius: 50%;
-	display: block;
 	margin-right: 1em;
+	border-radius: 25%;
 }
-@media(max-width: 392px){
-	#profile{
+
+@media(min-width: 392px){
+	#profile img{
+		display: block;
+	}
+}
+@media(max-width: 425px){
+	.head img{
 		display: none;
 	}
 }
