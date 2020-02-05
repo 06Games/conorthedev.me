@@ -2,6 +2,11 @@ body{
 	min-width: 350px;
 }
 
+.hero a.kofi-button {
+	border-radius: 4px;
+	margin: 0 .5rem .5rem 0;
+}
+
 .head{
 	display: flex; 
 	margin-bottom: 1.5rem;
@@ -15,7 +20,6 @@ body{
 	margin-right: 1em;
 	border-radius: 25%;
 }
-
 @media(min-width: 392px){
 	#profile img{
 		display: block;
@@ -26,6 +30,7 @@ body{
 		display: none;
 	}
 }
+
 
 @media(max-width: 1200px){
 	#tweaks .tile:not(.is-child){
